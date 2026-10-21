@@ -39,7 +39,7 @@ const francine = createPet("Francine", "turtle");
 clover.isTired = 8;
 francine.isTired = 9;
 
-allPets = [sora, clover, baxter, cleo, francine];
+const allPets = [sora, clover, baxter, cleo, francine];
 
 // console.log(allPets);
 
@@ -48,7 +48,7 @@ const showPets = function (petArray) {
 
   for (let pet of petArray) {
     let status = "ready to play!";
-    if (this.isTired >= 7) {
+    if (pet.isTired >= 7) {
       status = "sleeping";
     }
     const li = document.createElement("li");
